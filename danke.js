@@ -136,17 +136,9 @@ function scrollFn()
         endPos = 7650-1;
         duration = endPos - startPos;
         nowPos = window.scrollY - startPos;
-        
-        rock.classList.add("show");
-    if (direction === "d") {
-      rockPos += 6.4;
-    } else if (direction === "u") {
-      rockPos -= 6.4;
-    } //
-    rock.style.bottom = rockPos + "px";
         //rock.classList.add('show');
         //rock.style.bottom = rockPos + 'px';
-        rockPos += 10;
+        //rockPos += 10;
         rotRatio.classList.remove('on');
         smallRock.classList.remove('on');
         clork.classList.remove('on');
@@ -176,6 +168,16 @@ function scrollFn()
         solar.classList.add('on');
         nowRotate = findAngle(0, 0, duration,nowPos);
     }
+         //
+    else if(window.scrollY >=7450 && window.scollY <7550) {
+    rock.classList.add("show");
+    if (direction === "d") {
+      rockPos += 6.4;
+    } else if (direction === "u") {
+      rockPos -= 6.4;
+    }
+    rock.style.bottom = rockPos + "px";}
+    //
 }
 
 function findAngle(_angleA, _angleB, _duration, _nowScroll)
