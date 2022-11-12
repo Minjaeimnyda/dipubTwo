@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "halo",
+			"path": "."
+		},
+		{
+			"name": "nasaImg",
+			"path": "../digPub/nasaImg"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "halo"
+	}
+}
