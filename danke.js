@@ -55,22 +55,22 @@ function scrollFn()
         
         nowRotate = findAngle(0 , 0, duration, nowPos);
     }
-    else if(window.scrollY >= 500 && window.scrollY < 5000)
+    else if(window.scrollY >= 500 && window.scrollY < 2650)
     {
         test.setAttribute('src', 'nasaImg/craftTwo.png');
         startPos = 500;
-        endPos = 5000-1;
+        endPos = 2650-1;
         duration = endPos - startPos;
         nowPos = window.scrollY - startPos;
         
         nowRotate = findAngle(0 , -5, duration, nowPos);
         planetPos = findAngle(0 , 300, duration, nowPos);
     }
-    else if(window.scrollY >= 5000 && window.scrollY < 10500) {
+    else if(window.scrollY >= 2650 && window.scrollY < 5450) {
         test.setAttribute('src', 'nasaImg/craftFour.png');
         targetRotate = 0;
-        startPos = 5000;
-        endPos = 10500-1;
+        startPos = 2650;
+        endPos = 5450-1;
         duration = endPos - startPos;
         nowPos = window.scrollY - startPos;
         rock.classList.remove('show');
@@ -78,11 +78,11 @@ function scrollFn()
         rock.style.bottom = rockPos + 'px';
         nowRotate = findAngle(-60, -70, duration, nowPos);
     }
-    else if(window.scrollY >= 10500 && window.scrollY < 12000) {
+    else if(window.scrollY >= 5450 && window.scrollY < 7650) {
         test.setAttribute('src', 'nasaImg/craftFive.png');
         targetRotate = 0;
-        startPos = 10500;
-        endPos = 12000-1;
+        startPos = 5450;
+        endPos = 7650-1;
         duration = endPos - startPos;
         nowPos = window.scrollY - startPos;
         rock.classList.add('show');
@@ -95,11 +95,11 @@ function scrollFn()
         solar.classList.remove('on');
         nowRotate = findAngle(130, 135, duration,nowPos);
     }
-    else  if(window.scrollY >= 12000) {
+    else  if(window.scrollY >= 7650) {
         test.setAttribute('src', 'nasaImg/boom.png');
         targetRotate = 0;
-        startPos = 12000-1;
-        endPos = 15000;
+        startPos = 7650-1;
+        endPos = 7650;
         duration = endPos - startPos;
         nowPos = window.scrollY - startPos;
         rock.classList.remove('show');
